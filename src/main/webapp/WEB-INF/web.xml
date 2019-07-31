@@ -17,6 +17,7 @@
     <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
   </listener>
 
+
   <!-- 解决中文乱码过滤器 -->
   <filter>
     <filter-name>characterEncodingFilter</filter-name>
@@ -27,7 +28,7 @@
     </init-param>
     <init-param>
       <param-name>forceEncoding</param-name>
-      <param-value>UTF-8</param-value>
+      <param-value>true</param-value>
     </init-param>
   </filter>
   <filter-mapping>
